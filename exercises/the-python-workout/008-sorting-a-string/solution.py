@@ -1,3 +1,7 @@
 """Exercise 8: Sorting A String"""
 
-# TODO: Implement solution
+def strsort(input):
+    return ''.join(sorted(input))
+
+output = strsort(input('Enter a string:'))
+print(output)
