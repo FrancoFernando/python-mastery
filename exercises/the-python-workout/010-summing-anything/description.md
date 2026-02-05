@@ -3,3 +3,8 @@
 ## Description
 
 Redefine the mysum function, such that it can take any number of arguments. The arguments must all be of the same type and respond appropriately to the + operator. The result should be a new, longer sequence of the type provided by the parameters. Thus, the result of mysum('abc', 'def') will be the string abcdef, and the result of mysum([1,2,3],[4,5,6]) will be the six-element list [1,2,3,4,5,6]. Of course, it should also still return the integer 6 if we invoke mysum(1,2,3).
+
+## Learning
+
+- remember that the splat * operator put every number of argument into a tuple
+- slicing [1:] iterate over the whole sequence except the first element
