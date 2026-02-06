@@ -14,6 +14,13 @@ def sort_by_name(dictionary):
     return dictionary['name']
 
 def alphabetizing_countries(countries):
-    return sorted(countries, key=lambda d : ['name'])
+    return sorted(countries, key=lambda d : d['name'])
 
-print(alphabetizing_countries(countries))    
+def print_countries(countries):
+    for country in countries:
+        print(f"name={country['name']}, size={country['size']}, pop={country['population']}")
+
+print("Before sorting")
+print_countries(countries)
+print("After sorting")
+print_countries(alphabetizing_countries(countries))
