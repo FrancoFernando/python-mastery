@@ -13,3 +13,7 @@ COUNTRIES = [
     {'name': 'Japan', 'size': 377975, 'population': 125700000},
     {'name': 'United States', 'size': 9833517, 'population': 331900000}]
 Write a function, alphabetize_countries, that sorts this list by country name. The function should return the list of dicts but sorted alphabetically by country name.
+
+## Learning
+
+- syntax: lambda input : func(input)
