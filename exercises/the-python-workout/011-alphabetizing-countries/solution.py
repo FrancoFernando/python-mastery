@@ -10,10 +10,10 @@ countries = [
     {'name': 'Japan', 'size': 377975, 'population': 125700000},
     {'name': 'United States', 'size': 9833517, 'population': 331900000}]
 
-def sorting_key(dictionary):
+def sort_by_name(dictionary):
     return dictionary['name']
 
 def alphabetizing_countries(countries):
-    return sorted(countries, key=sorting_key)
+    return sorted(countries, key=sort_by_name)
 
 print(alphabetizing_countries(countries))    
