@@ -14,6 +14,6 @@ def sort_by_name(dictionary):
     return dictionary['name']
 
 def alphabetizing_countries(countries):
-    return sorted(countries, key=sort_by_name)
+    return sorted(countries, key=lambda d : ['name'])
 
 print(alphabetizing_countries(countries))    
