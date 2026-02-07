@@ -2,13 +2,16 @@
 from collections import Counter
 
 def most_repeating_word(words):
+    if not words:
+        return ""
+    
     output = ""
-    high_frequency = 0
+    max_frequency = 0
     for word in words:
-        most_repeated_value = Counter(word).most_common(1)[0][1]
-        if most_repeated_value > high_frequency:
+        max_letter_frequency = Counter(word).most_common(1)[0][1]
+        if max_letter_frequency > max_frequency:
             output = word
-            high_frequency = most_repeated_value
+            max_frequency = max_letter_frequency
     
     return output
 
