@@ -15,5 +15,11 @@ def most_repeating_word(words):
     
     return output
 
-print(most_repeating_word(['this', 'is', 'an', 'elementary', 'test', 'example']))
+def most_repeating_word_v2(words):
+    if not words:
+        return ""
+    
+    return max(words, key=lambda w : Counter(w).most_common(1)[0][1])
 
+print(most_repeating_word(['this', 'is', 'an', 'elementary', 'test', 'example']))
+print(most_repeating_word_v2(['this', 'is', 'an', 'elementary', 'test', 'example']))
