@@ -27,5 +27,12 @@ def format_sort_records_v2():
 
     return "\n".join(output)
 
+def format_sort_records_v3():
+    return "\n".join(
+        f"{name:14} {pop:14,} {size:14,}" 
+        for name,pop,size in sorted(COUNTRIES, key=operator.itemgetter(0))
+        )
+
 print(format_sort_records())
 print(format_sort_records_v2())
+print(format_sort_records_v3())
