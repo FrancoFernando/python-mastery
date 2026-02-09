@@ -1,6 +1,6 @@
 """Exercise 14: Restaurant"""
 
-MENU = {"margherita":15, "napoli":16, "capricciosa":23, "funght":20, "focaccia":12}
+MENU = {"margherita":15, "napoli":16, "capricciosa":23, "mushrooms":20, "focaccia":12}
 
 def restaurant():
     total = 0
