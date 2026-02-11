@@ -8,3 +8,4 @@
 
 - the input method always return a string even in case of numbers, so you need to explicitly convert string to numbers
 - when updating a dictionary you can't use something like dict[key] += number because you need to handle the first time the key is inserted. Alternatives are dict.get(key, defaultvalue) or default dict.
+- defaultdict takes a function used as a factory when no key is in the dict; with int as a function, you can use dict[key] += number
