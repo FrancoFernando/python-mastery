@@ -9,13 +9,13 @@ def get_rainfall():
     print("Enter rainfall data (press Enter on city name to finish)\n")
     while True:
 
-        city = input("City name:")
+        city = input("City name:").strip()
 
         if not city:
             break
 
         rain = input(f"Rainfall in {city} (mm):")
-        rainfall[city] = rain
+        rainfall[city] = rainfall.get(city, 0) + int(rain)
     print_rainfall_report(rainfall)
 
 get_rainfall()
