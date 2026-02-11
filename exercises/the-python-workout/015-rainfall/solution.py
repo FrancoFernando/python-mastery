@@ -18,4 +18,20 @@ def get_rainfall():
         rainfall[city] = rainfall.get(city, 0) + int(rain)
     print_rainfall_report(rainfall)
 
+from collections import defaultdict
+
+def get_rainfall_v2():
+    rainfall = defaultdict(int)
+    print("Enter rainfall data (press Enter on city name to finish)\n")
+    while True:
+
+        city = input("City name:").strip()
+
+        if not city:
+            break
+
+        rain = input(f"Rainfall in {city} (mm):")
+        rainfall[city] += int(rain)
+    print_rainfall_report(rainfall)
+
 get_rainfall()
