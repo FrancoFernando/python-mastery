@@ -24,4 +24,12 @@ d2 = {'a':1, 'b':2, 'c':4}
 print(dictdiff(d1,d2))
 print(dictdiff_v2(d1,d2))
 
+d3 = {'a':1, 'b':2, 'd':3}
+d4 = {'a':1, 'b':2, 'c':4}
+print(dictdiff(d3,d4))
+print(dictdiff_v2(d3,d4))
 
+
+d5 = {'a':1, 'b':2, 'd':4}
+print(dictdiff(d1, d5))
+print(dictdiff_v2(d1, d5))
