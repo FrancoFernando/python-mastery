@@ -7,7 +7,7 @@ def dictdiff(first, second):
     for key in keys:
         value_first = first.get(key)
         value_second = second.get(key)
-        if (value_first != value_second):
+        if value_first != value_second:
             output[key] = [value_first, value_second]
     return output
 
