@@ -11,8 +11,17 @@ def dictdiff(first, second):
             output[key] = [value_first, value_second]
     return output
 
+def dictdiff_v2(first, second):
+    keys = first.keys() | second.keys()
+
+    return {
+        key: [first.get(key), second.get(key)]
+        for key in keys if first.get(key) != second.get(key)
+    }
+
 d1 = {'a':1, 'b':2, 'c':3}
 d2 = {'a':1, 'b':2, 'c':4}
 print(dictdiff(d1,d2))
+print(dictdiff_v2(d1,d2))
 
 
