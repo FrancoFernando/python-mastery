@@ -3,11 +3,10 @@
 def passwd_to_dict(filename):
     output = {}
     with open(filename) as file:
-        for row in file:
-            if row.startswith('#'):
-                continue
-            fields = row.split(':')
-            output[fields[0]] = fields[2]
+        for line in file:
+            if not line.startswith(('#','\n')):
+                fields = line.split(':')
+                output[fields[0]] = fields[2]
     return output
 
 
