@@ -4,9 +4,10 @@ def passwd_to_dict(filename):
     output = {}
     with open(filename) as file:
         for line in file:
-            if not line.startswith(('#','\n')):
-                fields = line.split(':')
-                output[fields[0]] = fields[2]
+            line = line.strip()
+            if not line.startswith('#'):
+                username, _, id, *_ = line.split(':')
+                output[username] = id
     return output
 
 
