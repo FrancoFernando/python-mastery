@@ -1,3 +1,18 @@
 """Exercise 19: Etc Passwd To Dict"""
 
-# TODO: Implement solution
+def passwd_to_dict(filename):
+    output = {}
+    with open(filename) as file:
+        for row in file:
+            if row.startswith('#'):
+                continue
+            fields = row.split(':')
+            output[fields[0]] = fields[2]
+    return output
+
+
+from pathlib import Path
+
+script_dir = Path(__file__).parent
+filepath = script_dir / 'passwd.txt'
+print(passwd_to_dict(filepath))
