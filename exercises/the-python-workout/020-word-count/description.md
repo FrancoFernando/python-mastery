@@ -8,3 +8,8 @@
 - Number of words (separated by whitespace)
 - Number of lines
 - Number of unique words (case sensitive, so “NO” is different from “no”)
+
+## Learning
+
+- set and dict have an update method that takes iterables
+- putting stats in a dict helps to write cleaner code
