@@ -1,5 +1,8 @@
 """Exercise 21: Longest Word Per File"""
 
+from pathlib import Path
+import os
+
 def find_longest_word(filename):
     longest_word = ""
     with open(filename) as file:
@@ -9,8 +12,14 @@ def find_longest_word(filename):
                     longest_word = word
     return longest_word
 
-from pathlib import Path
+def find_all_longest_words(dirname):
+    dir_path = Path(dirname)
+    output = {}
+    for file in dir_path.iterdir():
+        output[file.name] = find_longest_word(file)
+    return output
 
 script_path = Path(__file__).parent
 filepath = script_path / 'files' / '43-0.txt'
-print(find_longest_word(filepath))
+print(find_all_longest_words(script_path / 'files'))
+#print(find_longest_word(filepath))
