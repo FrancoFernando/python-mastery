@@ -4,10 +4,10 @@ def find_longest_word(filename):
     longest_word = ""
     with open(filename) as file:
         for line in file:
-            words = line.split()
-            if words:
-                longest_word = max(longest_word, max(words, key=len), key=len)
-        return longest_word
+            for word in line.split():
+                if len(word) > len(longest_word):
+                    longest_word = word
+    return longest_word
 
 from pathlib import Path
 
