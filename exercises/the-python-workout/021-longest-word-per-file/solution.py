@@ -26,6 +26,7 @@ def find_all_longest_words_v2(dirname):
             if os.path.isfile(os.path.join(dirname, file))}
 
 script_path = Path(__file__).parent
-filepath = script_path / 'files' / '43-0.txt'
-print(find_all_longest_words_v2(script_path / 'files'))
-#print(find_longest_word(filepath))
+# to test find_longest_word alone
+# filepath = script_path / 'files' / '43-0.txt'
+print(find_all_longest_words(script_path / 'files'))
+print(find_longest_word(script_path / 'files'))
