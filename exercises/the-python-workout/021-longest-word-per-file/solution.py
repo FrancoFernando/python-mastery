@@ -14,7 +14,7 @@ def find_longest_word(filename):
 
 def find_all_longest_words(dirname):
     dir_path = Path(dirname)
-    return {file.name:find_longest_word(file) for file in dir_path.iterdir()}
+    return {file.name:find_longest_word(file) for file in dir_path.iterdir() if file.is_file()}
     """ output = {}
     for file in dir_path.iterdir():
         output[file.name] = find_longest_word(file) 
