@@ -1,5 +1,6 @@
-{
-  "science": {"min": 35, "max": 95, "average": 82.0},
-  "literature": {"min": 38, "max": 98, "average": 72.0},
-  "math": {"min": 38, "max": 100, "average": 77.0}
-}
+[{"math" : 90, "literature" : 98, "science" : 97},
+ {"math" : 65, "literature" : 79, "science" : 85},
+ {"math" : 78, "literature" : 83, "science" : 75},
+ {"math" : 92, "literature" : 85, "science" : 78},
+ {"math" : 80, "literature" : 100, "science" : 90}
+]
