@@ -10,4 +10,4 @@ Write a function, print_scores, that takes a directory name as an argument and p
 - use defaultdict
 - json.load loads from file, json.loads loads a string
 - use items() to unpack and iterate over key, value in a dict
-- - there is a statistics package to calculate i.e. avg
+- there is a statistics package to calculate i.e. avg
