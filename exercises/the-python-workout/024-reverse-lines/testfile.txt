@@ -1,0 +1,6 @@
+I am convinced that many concepts in computer science are easier to grasp than they seem. 
+The problem is that often, they are not explained clearly.
+
+Indeed, explaining things in a simple and concise way takes a lot of effort.
+abc def
+hil mno
