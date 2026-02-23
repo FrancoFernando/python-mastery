@@ -13,3 +13,8 @@ the argument will only contain one of our six operators and two valid numbers.
 - look at the operator module, whose functions implement many of Python’s operators
 
 ## Learning
+
+- a dispatch table is a dictionary where values are functions that can be called as table[key](args)
+- lambda notation: lambda x,y : x**y 
+- maxsplit = 2 can be passed to split to say the max numbers of split to make (equal to the max valid index in the output list)
+  
