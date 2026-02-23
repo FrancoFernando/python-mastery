@@ -11,3 +11,5 @@ the argument will only contain one of our six operators and two valid numbers.
 - hint: you should implement each of the operations as a separate function
 - you shouldn’t use an if statement to decide which function should be run
 - look at the operator module, whose functions implement many of Python’s operators
+
+## Learning
