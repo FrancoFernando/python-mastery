@@ -1,3 +1,8 @@
 """Exercise 30: Flatten A List"""
 
-# TODO: Implement solution
+def flatten(input_list):
+    return [item 
+            for sublist in input_list 
+            for item in sublist]
+
+print(flatten([[1,2], [3,4]]))
