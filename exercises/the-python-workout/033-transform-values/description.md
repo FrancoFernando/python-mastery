@@ -8,3 +8,7 @@ d = {'a':1, 'b':2, 'c':3}
 transform_values(lambda x: x*x, d)
 The result of this call will be the following dict:
 {'a': 1, 'b': 4, 'c': 9}
+
+## learning
+
+- a function can be used in comprehnsion to transform values.
