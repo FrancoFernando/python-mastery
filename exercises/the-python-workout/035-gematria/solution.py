@@ -17,6 +17,11 @@ def gematria_for(word):
         result += d[c]
     return result
 
+def gematria_for_v2(word):
+    d = gematria_dict()
+    return sum(d[c] for c in word)
+
 print(gematria_dict())
 print(gematria_dict_v2())
 print(gematria_for('cat'))
+print(gematria_for_v2('cat'))
