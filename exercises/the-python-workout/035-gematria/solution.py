@@ -15,12 +15,12 @@ def gematria_for(word):
     d = gematria_dict()
     result = 0
     for c in word:
-        result += d[c]
+        result += d.get(c,0)
     return result
 
 def gematria_for_v2(word):
     d = gematria_dict()
-    return sum(d[c] for c in word)
+    return sum(d.get(c,0) for c in word)
 
 def gematria_equal_words(word):
     score = gematria_for(word.lower())
