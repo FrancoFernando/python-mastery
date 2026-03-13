@@ -1,3 +1,5 @@
 """Exercise 36: Sales Tax"""
 
-# TODO: Implement solution
+from freedonia import calculate_tax
+
+print(calculate_tax(500, 'Harpo', 12))
