@@ -1,3 +1,12 @@
 """Exercise 37: Menu"""
 
-# TODO: Implement solution
+from menu import menu
+
+def func_a():
+    return "A"
+
+def func_b():
+    return "B"
+
+return_value = menu(a=func_a, b=func_b)
+print(f'Result is {return_value}')
