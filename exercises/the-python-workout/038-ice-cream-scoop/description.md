@@ -6,4 +6,7 @@ Define a class, Scoop, that represents a single scoop of ice cream. Each scoop s
 
 ## Learning
 
-- after classneme there is a bracket
+- after class name there is a bracket
+- the constructor goes into the __init__(self, args..) function
+- members are declared and initialized into __init__ and are publicby default
+- members inside the class are accessed with self.member_name
