@@ -12,8 +12,7 @@ class Bowl():
         return ",".join(scoop.name for scoop in self.scoops)
 
     def add_scoops(self, *scoops):
-        for scoop in scoops:
-            self.scoops.append(scoop)
+        self.scoops.extend(scoops)
     
 
 
