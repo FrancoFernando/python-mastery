@@ -5,7 +5,17 @@ class Scoop():
         self.name = name
 
 class Bowl():
-    pass
+    def __init__(self):
+        self.scoops = []
+
+    def __str__(self):
+        return ",".join(scoop.name for scoop in self.scoops)
+
+    def add_scoops(self, *scoops):
+        for scoop in scoops:
+            self.scoops.append(scoop)
+    
+
 
 s1 = Scoop('chocolate')
 s2 = Scoop('vanilla')
